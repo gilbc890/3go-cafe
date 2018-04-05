@@ -50,11 +50,138 @@ header{
 .home_wrap .home_text{
   display:block;
   width:80%;
-  margin:15% auto 10%;
+  margin:10% auto 10%;
   text-align: center;
 }
-.home_wrap .home_text>p,img{
+.home_wrap .home_text>p{
   font-size: 3em;
   color: #fff;
   padding:1%;
+}
+.home_wrap .home_text>img{
+  font-size: 3em;
+  color: #fff;
+  padding:1%;
+}
+/* Section */
+/* About */
+.about_wrap{
+  width:80%;
+  margin:10% auto;
+}
+.about{
+  display: block;
+  overflow: hidden;
+}
+/* Logo Box */
+.logo_box{
+  position: relative;
+  display:inline-block;
+  width:250px;
+  height:250px;
+  border:5px solid #5F5F5F;
+  margin:auto;
+}
+.logo_box .logo_box_img{
+  position: relative;
+  margin:15%;
+  text-align: center;
+}
+.logo_box>p{
+  font-size:2em;
+  text-align: center;
+  font-weight:400;
+}
+.about_text{
+  position: relative;
+  font-size: 2.5em;
+  margin-left: 10%;
+}
+.about_text>p{
+  display: inline-block;
+  font-weight: 700;
+}
+/* About_second */
+.about_second{
+  position: relative;
+  margin-top:10%;
+  font-size: 2.5em;
+}
+.about_second_text>i{
+  font-weight: 600;
+}
+.about_second .about_pic>img{
+  width:100%;
+}
+/* Menu */
+.menu_wrap{
+  background-image: url(../img/menu_bg_photo.png);
+}
+.menu_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  color: #fff;
+  font-weight:300;
+}
+.menu_wrap>hr{
+  width:10%;
+  border:2px solid #fff;
+}
+/* Gallery */
+.gallery{
+  padding-top:20px;
+}
+/* After Hover Text Effect */
+.gallery_text_box{
+  position: relative;
+  width:100%;
+}
+.gallery_text{
+  position: absolute;
+  width:100%;
+  height:130px;
+  font-size:1.5em;
+  color: #EE4A56;
+  background-color: #fff;
+  opacity: 0.8;
+  text-align: center;
+  margin-top:-65%;
+}
+.gallery_text>p:nth-child(1){
+  margin-top:50px;
+}
+.first_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.third_photo>.gallery_text_box>.gallery_text>p:nth-child(1){
+  margin-top: 30px;
+}
+.fourth_photo>.gallery_text_box>.gallery_text>p{
+  margin-top:10px;
+}
+
+/* First Line */
+.first_line{
+  position: relative;
+  width:80%;
+  margin:auto;
+  padding-bottom:15px;
+  overflow: hidden;
+}
+.gallery_photo>img{
+  position: relative;
+  width:100%
+}
+/* Second Line */
+.second_line{
+  position: relative;
+  width:80%;
+  margin:auto;
+}
+/* Menu Button */
+.menu_button{
+  position: relative;
+  padding:3%;
+  text-align: center;
 }

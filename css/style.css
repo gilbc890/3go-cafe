@@ -185,3 +185,98 @@ header{
   padding:3%;
   text-align: center;
 }
+/* Products */
+.products_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  font-weight:300;
+}
+.products_wrap>hr{
+  width:10%;
+  border:2px solid #000;
+}
+
+/* Carousel */
+.carousel{
+  width:50%;
+  margin:auto;
+}
+.item>img{
+  width:100%;
+}
+/* Products text */
+.info_text{
+  opacity:0.8;
+  margin:20px;
+  text-align: right;
+}
+
+/* Catering */
+.catering_wrap{
+  background: url("../img/catering-background.png");
+  padding-bottom: 40px;
+}
+.catering_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding-top:20px;
+  font-weight:300;
+  color: #fff;
+}
+.catering_wrap>hr{
+  width:10%;
+  border:2px solid #fff;
+}
+.catering_wrap>h3{
+  width:70%;
+  text-align: center;
+  color: #fff;
+  margin:auto;
+  font-size: 2em;
+  font-weight:400;
+  padding:20px;
+}
+/* Symbol */
+.catering_symbol{
+  width:80%;
+  margin:20px auto;
+}
+.catering_symbol .pour-over{
+  width:30%;
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.catering_symbol .desserts{
+  width:30%;
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+  margin:0 4.9%;
+}
+.catering_symbol .perfomance{
+  width:30%;
+
+  height:470px;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.symbol_img{
+  width:60%;
+  height:180px;
+  margin:20px auto;
+  text-align: center;
+}
+.symbol_img>img{
+  width:80%;
+}
+/* Symbol Text */
+.symbol_title{
+  font-size: 2em;
+  text-align: center;
+  color:red;
+  margin-top: 40px;
+}
+.symbol_text{
+  font-size: 1.5em;
+  text-align: center;
+  padding:10%;
+}

@@ -272,11 +272,60 @@ header{
 .symbol_title{
   font-size: 2em;
   text-align: center;
-  color:red;
+  color:#F28322;
   margin-top: 40px;
 }
 .symbol_text{
   font-size: 1.5em;
   text-align: center;
   padding:10%;
+}
+/* Festival */
+.festival_wrap>h1{
+  text-align: center;
+  font-size: 4em;
+  padding:20px 0 20px;
+  font-weight:300;
+}
+.festival_intro{
+  width:80%;
+  margin:60px auto;
+}
+.festival_wrap .festival_text{
+  text-align: center;
+}
+.festival_wrap .festival_text>h3{
+  font-size:2.5em;
+  color:#EE4A56;
+  padding:20px;
+}
+.festival_wrap .festival_text>p{
+  font-size:2em;
+}
+.poster_button{
+  text-align: center;
+}
+/* More Posters */
+.first_post{
+  position: relative;
+  width:80%;
+  margin:40px auto 0;
+}
+.second_post{
+  position: relative;
+  width:80%;
+  margin:20px auto 40px;
+}
+.poster_wrap img{
+  width:100%;
+}
+/* Footer */
+footer{
+  padding-top:40px;
+}
+.footer_img>.col-sm-3{
+  padding:0;
+}
+.footer_img>.col-sm-3>img{
+  width:100%;
 }

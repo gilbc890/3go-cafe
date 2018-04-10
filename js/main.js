@@ -74,7 +74,7 @@ $(document).ready(function () {
     $(".fifth_photo>img, #fifth_photo_hover").hover(function(){
       $("#fifth_photo_hover").show();
     }, function(){
-        $("#first_photo_hover").hide();
+        $("#fifth_photo_hover").hide();
     });
     $(".sixth_photo>img, #sixth_photo_hover").hover(function(){
       $("#sixth_photo_hover").show();

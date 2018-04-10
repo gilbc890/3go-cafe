@@ -1,12 +1,21 @@
 $(document).ready(function () {
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
+    $(document).scroll(function () {
+        var scroll = $(document).scrollTop();
         if (scroll > 800) {
           $("#white_logo").addClass("hidden");
           $("#gray_logo").removeClass("hidden")
           $(".navbar-right").css("color", "#9d9d9d");
           $("#home_button").removeClass("active");
+        } else {
+          $("#white_logo").removeClass("hidden");
+          $("#gray_logo").addClass("hidden");
+          $(".navbar-right").css("color", "#fff");
+          $("#home_button").addClass("active");
+
         }
+        if (scroll > 900){
+          $("#text_effect").css({"visibility" : "visible", "opacity" : "1"});
+        };
 
     });
 

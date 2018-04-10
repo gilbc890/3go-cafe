@@ -80,6 +80,9 @@ header{
   display: block;
   overflow: hidden;
 }
+#about>h1{
+  visibility: hidden;
+}
 /* Logo Box */
 .logo_box{
   position: relative;
@@ -109,6 +112,9 @@ header{
 .about_text>p{
   display: inline-block;
   font-weight: 700;
+  opacity:0;
+  visibility: hidden;
+  transition: 0.5s linear
 }
 /* About_second */
 .about_second{

@@ -1,6 +1,7 @@
 html,body{
   width:100%;
   height:100%;
+  font-family: 'NanumSquare', 'Open Sans', sans-serif;
 }
 header{
   width:100%;
@@ -19,6 +20,9 @@ header{
 .navbar-inverse{
   border:none;
 }
+.active>a{
+  background-color: inherit!important;
+}
 /* Navbar Logo */
 .navbar-header{
   padding-left: 5%;
@@ -35,11 +39,13 @@ header{
 .navbar-right{
   padding-right:5%;
   height:auto;
+  font-family:"Open Sans";
 }
 .navbar-right>li{
   font-size: 1.5em;
 }
-.navbar-nav>li>a{
+.navbar-right>li>a{
+  color:#fff;
 }
 
 /* Header Article_Main-Logo */
@@ -52,6 +58,7 @@ header{
   width:80%;
   margin:10% auto 10%;
   text-align: center;
+  font-family:"Open Sans";
 }
 .home_wrap .home_text>p{
   font-size: 3em;
@@ -91,11 +98,13 @@ header{
   font-size:2em;
   text-align: center;
   font-weight:400;
+  font-family: "Open Sans";
 }
 .about_text{
   position: relative;
   font-size: 2.5em;
   margin-left: 10%;
+  font-family: "NanumSquare";
 }
 .about_text>p{
   display: inline-block;
@@ -106,6 +115,7 @@ header{
   position: relative;
   margin-top:10%;
   font-size: 2.5em;
+  font-family:"NanumSquare";
 }
 .about_second_text>i{
   font-weight: 600;
@@ -123,6 +133,7 @@ header{
   padding-top:20px;
   color: #fff;
   font-weight:300;
+  font-family: "Open Sans";
 }
 .menu_wrap>hr{
   width:10%;
@@ -136,6 +147,7 @@ header{
 .gallery_text_box{
   position: relative;
   width:100%;
+  display:none;
 }
 .gallery_text{
   position: absolute;
@@ -147,6 +159,7 @@ header{
   opacity: 0.8;
   text-align: center;
   margin-top:-65%;
+  font-family: "NanumSquare"
 }
 .gallery_text>p:nth-child(1){
   margin-top:50px;
@@ -180,17 +193,91 @@ header{
   margin:auto;
 }
 /* Menu Button */
-.menu_button{
+.menu_view_button{
   position: relative;
-  padding:3%;
+  padding:2%;
   text-align: center;
 }
+/* Menu Details */
+.cafe-menu-detail {
+    width: 100%;
+    height: 890px;
+    position: relative;
+    background-image: url(../img/cafe-menu-img.png);
+    background-size: cover;
+    display: none;
+}
+
+.cafe-menu-detail>.rectangle {
+    width: 80%;
+    height: 700px;
+    border: 3px solid white;
+    position: absolute;
+/*    margin: 0 auto;*/
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+
+.right-side-text {
+    float: left;
+    /*    display: inline-block;*/
+    /*    background-color: red;*/
+    height: 35%;
+    width: 50%;
+    text-align: center;
+    display: table-cell;
+    /*    vertical-align: middle;*/
+    position: relative;
+    top: 30%;
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(1) {
+    font-size: 4em;
+    font-family:"Open Sans"
+}
+
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(2),
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(3) {
+    color: black;
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: "Open Sans";
+}
+.cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(4){
+  font-family: "NanumSquare";
+}
+
+.center-side-text {
+    float: left;
+    display: inline-block;
+    height: 350px;
+    width: 15%;
+    margin-top: 60px;
+    margin-right: 80px;
+    margin-left: 60px;
+    font-family:"NanumSquare";
+    font-size: 1.5em;
+    line-height: 70px;
+}
+
+.left-side-text {
+    display: inline-block;
+    height: 550px;
+    width: auto;
+    font-size: 1.5em;
+    font-family: "NanumSquare";
+    line-height: 65px;
+    margin-top: 60px;
+}
+
 /* Products */
 .products_wrap>h1{
   text-align: center;
   font-size: 4em;
   padding-top:20px;
   font-weight:300;
+  font-family: "Open Sans";
 }
 .products_wrap>hr{
   width:10%;
@@ -210,6 +297,7 @@ header{
   opacity:0.8;
   margin:20px;
   text-align: right;
+  font-family:"NanumSquare";
 }
 
 /* Catering */
@@ -222,6 +310,7 @@ header{
   font-size: 4em;
   padding-top:20px;
   font-weight:300;
+  font-family:"Open Sans";
   color: #fff;
 }
 .catering_wrap>hr{
@@ -235,6 +324,8 @@ header{
   margin:auto;
   font-size: 2em;
   font-weight:400;
+  font-family:"NanumSquare";
+  line-height:150%;
   padding:20px;
 }
 /* Symbol */
@@ -271,12 +362,14 @@ header{
 /* Symbol Text */
 .symbol_title{
   font-size: 2em;
+  font-family:"NanumSquare";
   text-align: center;
   color:#F28322;
   margin-top: 40px;
 }
 .symbol_text{
   font-size: 1.5em;
+  font-family:"NanumSquare";
   text-align: center;
   padding:10%;
 }
@@ -284,6 +377,7 @@ header{
 .festival_wrap>h1{
   text-align: center;
   font-size: 4em;
+  font-family:"Open Sans"
   padding:20px 0 20px;
   font-weight:300;
 }
@@ -293,6 +387,7 @@ header{
 }
 .festival_wrap .festival_text{
   text-align: center;
+  font-family:"NanumSquare";
 }
 .festival_wrap .festival_text>h3{
   font-size:2.5em;
@@ -304,8 +399,12 @@ header{
 }
 .poster_button{
   text-align: center;
+  font-family:"NanumSquare";
 }
 /* More Posters */
+.poster{
+  display: none;
+}
 .first_post{
   position: relative;
   width:80%;

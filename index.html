@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -22,15 +24,16 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a href="#" class="navbar-brand">
-            <img src="img/header-people-logo.png" alt="logo">
+            <img id="white_logo" src="img/header-people-logo.png" alt="logo">
+            <img id="gray_logo" class="hidden" src="img/header-people-logo-gray.png" alt="gray logo">
           </a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Festival</a></li>
+          <li id="home_button" class="active"><a href="#">Home</a></li>
+          <li id="about_button" ><a href="#about">About</a></li>
+          <li id="menu_button" ><a href="#menu">Menu</a></li>
+          <li id="catering_button" ><a href="#catering">Catering</a></li>
+          <li id="festival_button" ><a href="#festival">Festival</a></li>
         </ul>
       </div>
     </nav>
@@ -46,7 +49,7 @@
     </article>
   </header>
   <section>
-    <article>
+    <article id="about">
       <div class="row about_wrap">
         <div class="about col-sm-12">
         <div class="logo_box">
@@ -75,7 +78,7 @@
         </div>
       </div>
     </article>
-    <article class="menu">
+    <article id="menu" class="menu">
       <div class="menu_wrap">
         <h1>3Go's Best Menu</h1>
         <hr>
@@ -83,7 +86,7 @@
           <div class="first_line row">
             <div class="first_photo gallery_photo col-sm-4">
               <img src="img/menu_first.png" alt="beer">
-              <div class="gallery_text_box hidden">
+              <div id="first_photo_hover" class="gallery_text_box">
                 <div class="gallery_text">
                   <p>맥주 ₩10,000</p>
                   <p>앤주 ₩5,000</p>
@@ -92,7 +95,7 @@
             </div>
             <div class="second_photo gallery_photo col-sm-4">
               <img src="img/menu_second.png" alt="soranade">
-              <div class="gallery_text_box hidden">
+              <div id="second_photo_hover" class="gallery_text_box">
                 <div class="gallery_text">
                   <p>소란에이드 ₩5,000</p>
                 </div>
@@ -100,7 +103,7 @@
             </div>
             <div class="third_photo gallery_photo col-sm-4">
               <img src="img/menu_third.png" alt="">
-              <div class="gallery_text_box hidden">
+              <div id="third_photo_hover" class="gallery_text_box">
                 <div class="gallery_text">
                   <p>소란에이드 ₩5,000</p>
                   <p>밀크티 ₩5,000</p>
@@ -111,7 +114,7 @@
           <div class="second_line row">
             <div class="fourth_photo gallery_photo col-sm-4">
                 <img src="img/menu_fourth.png" alt="">
-                <div class="gallery_text_box hidden">
+                <div id="fourth_photo_hover" class="gallery_text_box">
                   <div class="gallery_text">
                     <p>소란에이드 ₩5,000</p>
                     <p>소란에이드 ₩5,000</p>
@@ -121,7 +124,7 @@
             </div>
             <div class="fifth_photo gallery_photo col-sm-4">
               <img src="img/menu_fifth.png" alt="">
-              <div class="gallery_text_box hidden">
+              <div id="fifth_photo_hover" class="gallery_text_box">
                 <div class="gallery_text">
                   <p>아메리카노 ₩5,000</p>
                 </div>
@@ -129,7 +132,7 @@
             </div>
             <div class="sixth_photo gallery_photo col-sm-4">
               <img src="img/menu_sixth.png" alt="">
-              <div class="gallery_text_box hidden">
+              <div id="sixth_photo_hover" class="gallery_text_box">
                 <div class="gallery_text">
                   <p>자세한 메뉴는 아래에...</p>
                 </div>
@@ -137,10 +140,36 @@
             </div>
           </div>
         </div>
-        <div class="menu_button">
+        <div class="menu_view_button">
           <button type="button" class="btn btn-danger btn-lg">VIEW ALL MENU</button>
         </div>
       </div>
+      <div class="cafe-menu-detail">
+                <div class="rectangle">
+                    <div class="right-side-text">
+                        <p>HOT & TEA</p>
+                        <p>HAND DRIP</p>
+                        <p>COFFEE</p>
+                        <p>시원함을 날릴 수 있는 쓰리고 커피</p>
+                    </div>
+                    <div class="center-side-text">
+                        <p>핫 초코 5.0</p>
+                        <p>88밀크티 5.5</p>
+                        <p>오곡라떼 5.0</p>
+                        <p>녹차라떼 5.5</p>
+                        <p>핫미쵸 5.5</p>
+                    </div>
+                    <div class="left-side-text">
+                        <p>캐모마일</p>
+                        <p>다즐링</p>
+                        <p>얼그레이</p>
+                        <p>자스민</p>
+                        <p>로즈마리</p>
+                        <p>유자</p>
+                        <p>레몬</p>
+                        <p>자몽 4.5</p>
+                    </div>
+                </div>
 
     </article>
     <article class="products">
@@ -161,10 +190,10 @@
                   <img src="img/sample-photo.png" alt="products">
                 </div>
                 <div class="item">
-                  <img src="img/sample-photo.png" alt="products">
+                  <img src="img/sample-photo2.png" alt="products">
                 </div>
                 <div class="item">
-                  <img src="img/sample-photo.png" alt="products">
+                  <img src="img/sample-photo3.png" alt="products">
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left"></span>
@@ -182,7 +211,7 @@
         <p class="info_text">쓰리고 Goods의 수익 일정부분은 불우이웃을 위한 재단에 기부합니다.</p>
       </div>
     </article>
-    <article class="catering">
+    <article id="catering" class="catering">
       <div class="catering_wrap">
         <h1>3Go's Catering</h1>
         <hr>
@@ -215,7 +244,7 @@
         </div>
       </div>
     </article>
-    <article class="festival">
+    <article id="festival" class="festival">
       <div class="festival_wrap">
         <h1>3Go's Festival</h1>
         <div class="festival_intro row">
@@ -233,7 +262,7 @@
         <div class="poster_button">
           <button type="button" class="btn btn-danger btn-lg">포스터 더보기</button>
         </div>
-        <div class="poster hidden">
+        <div class="poster">
           <div class="poster_wrap">
             <div class="first_post row">
               <div class="col-sm-3">

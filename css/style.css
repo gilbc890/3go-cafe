@@ -77,7 +77,6 @@ header{
   margin:10% auto;
 }
 .about{
-  display: block;
   overflow: hidden;
 }
 #about>h1{
@@ -108,6 +107,7 @@ header{
   font-size: 2.5em;
   font-family: "NanumSquare";
   text-align: center;
+  margin-top: 10%;
 }
 .about_text>p{
   display: inline-block;
@@ -201,7 +201,7 @@ header{
 /* Menu Button */
 .menu_view_button{
   position: relative;
-  padding:2%;
+  padding:5%;
   text-align: center;
 }
 /* Menu Details */
@@ -292,7 +292,7 @@ header{
 
 /* Carousel */
 .carousel{
-  width:50%;
+  width:65%;
   margin:auto;
 }
 .item>img{
@@ -352,7 +352,6 @@ header{
 }
 .catering_symbol .perfomance{
   width:30%;
-
   height:470px;
   background-color:rgba(255, 255, 255, 0.1);
 }

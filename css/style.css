@@ -90,7 +90,6 @@ header{
   width:250px;
   height:250px;
   border:5px solid #5F5F5F;
-  margin:auto;
 }
 .logo_box .logo_box_img{
   position: relative;
@@ -105,9 +104,10 @@ header{
 }
 .about_text{
   position: relative;
+  width:70%;
   font-size: 2.5em;
-  margin-left: 10%;
   font-family: "NanumSquare";
+  text-align: center;
 }
 .about_text>p{
   display: inline-block;
@@ -165,7 +165,7 @@ header{
   opacity: 0.8;
   text-align: center;
   margin-top:-65%;
-  font-family: "NanumSquare"
+  font-family: "NanumSquare";
 }
 .gallery_text>p:nth-child(1){
   margin-top:50px;
@@ -240,7 +240,7 @@ header{
 
 .cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(1) {
     font-size: 4em;
-    font-family:"Open Sans"
+    font-family:"Open Sans";
 }
 
 .cafe-menu-detail>.rectangle>.right-side-text>p:nth-child(2),
@@ -383,7 +383,7 @@ header{
 .festival_wrap>h1{
   text-align: center;
   font-size: 4em;
-  font-family:"Open Sans"
+  font-family:"Open Sans";
   padding:20px 0 20px;
   font-weight:300;
 }

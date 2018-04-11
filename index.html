@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
   <script
@@ -23,7 +24,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">
+          <a href="#home" class="navbar-brand">
             <img id="white_logo" src="img/header-people-logo.png" alt="logo">
             <img id="gray_logo" class="hidden" src="img/header-people-logo-gray.png" alt="gray logo">
           </a>
@@ -37,7 +38,7 @@
         </ul>
       </div>
     </nav>
-    <article class="home">
+    <article id="home" class="home">
       <div class="home_wrap">
         <span class="home_text">
           <p>ENJOY THE LIFE</p>
@@ -53,26 +54,26 @@
       <h1>3Go 쓰리고</h1>
       <div class="row about_wrap">
         <div class="about col-sm-12">
-        <div class="logo_box">
+        <div class="logo_box col-sm-6">
           <div class="logo_box_img">
             <img src="img/first-wrap-gray-logo.png" alt="second_logo">
           </div>
           <p>HAND-DRIP</p>
           <p>COFFEE</p>
         </div>
-        <span class="about_text">
+        <div class="about_text col-sm-6">
           쓰리고는
             <p id="text_effect">에스프레소 머신</p>
           이 없습니다.
-        </span>
+        </div>
         </div>
         <div class="about_second col-sm-12">
-          <span class="about_second_text col-sm-6">
+          <div class="about_second_text col-sm-6">
             <i>편리함보다는 약간의 불편함을.</i>
             <p>쓰리고는 언제나</p>
             <p>가장 맛있는 커피를 내리기 위해</p>
             <p>노력하겠습니다.</p>
-          </span>
+          </div>
           <div class="about_pic col-sm-6">
             <img src="img/about_photo.jpeg" alt="coffee dripping">
           </div>
@@ -142,7 +143,7 @@
           </div>
         </div>
         <div class="menu_view_button">
-          <button type="button" class="btn btn-danger btn-lg">VIEW ALL MENU</button>
+          <button id="menu_view_button" type="button" class="btn btn-danger btn-lg">VIEW ALL MENU</button>
         </div>
       </div>
       <div class="cafe-menu-detail">
@@ -261,7 +262,7 @@
         </div>
         </div>
         <div class="poster_button">
-          <button type="button" class="btn btn-danger btn-lg">포스터 더보기</button>
+          <button id="poster_button" type="button" class="btn btn-danger btn-lg">포스터 더보기</button>
         </div>
         <div class="poster">
           <div class="poster_wrap">

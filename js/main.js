@@ -13,7 +13,7 @@ $(document).ready(function () {
           $("#home_button").addClass("active");
 
         }
-        if (scroll > 900){
+        if (scroll > 820){
           $("#text_effect").css({"visibility" : "visible", "opacity" : "1"});
         };
 
@@ -42,11 +42,11 @@ $(document).ready(function () {
     });
 
     // Menu view
-    $(".menu_view_button").click(function(){
+    $("#menu_view_button").click(function(){
       $(".cafe-menu-detail").fadeToggle();
     });
     // Posters View
-    $(".poster_button").click(function(){
+    $("#poster_button").click(function(){
       $(".poster").fadeToggle();
     });
 
@@ -77,6 +77,38 @@ $(document).ready(function () {
         $("#fifth_photo_hover").hide();
     });
     $(".sixth_photo>img, #sixth_photo_hover").hover(function(){
+      $("#sixth_photo_hover").show();
+    }, function(){
+        $("#sixth_photo_hover").hide();
+    });
+
+    // Mobile Version Menu Effect
+    $(".first_photo>img, #first_photo_hover").click(function(){
+      $("#first_photo_hover").show();
+    }, function(){
+        $("#first_photo_hover").hide();
+    });
+    $(".second_photo>img, #second_photo_hover").click(function(){
+      $("#second_photo_hover").show();
+    }, function(){
+        $("#second_photo_hover").hide();
+    });
+    $(".third_photo>img, #third_photo_hover").click(function(){
+      $("#third_photo_hover").show();
+    }, function(){
+        $("#third_photo_hover").hide();
+    });
+    $(".fourth_photo>img, #fourth_photo_hover").click(function(){
+      $("#fourth_photo_hover").show();
+    }, function(){
+        $("#fourth_photo_hover").hide();
+    });
+    $(".fifth_photo>img, #fifth_photo_hover").click(function(){
+      $("#fifth_photo_hover").show();
+    }, function(){
+        $("#fifth_photo_hover").hide();
+    });
+    $(".sixth_photo>img, #sixth_photo_hover").click(function(){
       $("#sixth_photo_hover").show();
     }, function(){
         $("#sixth_photo_hover").hide();
